@@ -1,4 +1,3 @@
-
  ; I implemented bubble sort as the sorting algorithm
 
  ; Define the length function

@@ -7,9 +7,7 @@
  ; Base case for the map function: if the input list is empty, return an empty list
 (= (map $f $c ()) ())
 
- ; Recursive case for the map function:
- ; Apply the binary function $f to the constant $c and the head of the list $x,
- ; then recursively call map on the tail of the list $xs.
+ ; Recursivly call the function $f on each of the items
 (= (map $f $c (:: $x $xs))
     (:: ($f $c $x) (map $f $c $xs))
 )
